@@ -53,7 +53,7 @@
     "format": "prettier-eslint --eslint-config-path ./config/eslint.config.js --write '**/*.js'",
     "lint": "eslint -c ./config/eslint.config.js . --ext .js",
     "predeploy": "gatsby build",
-    "deploy": "gh-pages -d yarn develop",
+    "deploy": "gh-pages -d build",
     "start": "yarn develop",
     "serve": "gatsby serve",
     "test": "jest --config ./config/jest.config.js"
