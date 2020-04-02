@@ -2,7 +2,8 @@
   "name": "gatsby-starter-leaflet",
   "description": "A Gatsby starter with Leafet!",
   "version": "0.2.2",
-  "author": "Colby Fayock <hello@colbyfayock.com>",
+  "author": "Charles Sin",
+  "homepage": "http://D0561910.github.io/Coronavirus-Map",
   "dependencies": {
     "axios": "^0.19.2",
     "gatsby": "^2.19.43",
@@ -29,6 +30,7 @@
     "eslint-config-zurgbot": "^0.0.6",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^2.5.0",
+    "gh-pages": "^2.2.0",
     "husky": "^4.2.3",
     "jest": "^25.1.0",
     "lint-staged": "^10.0.8",
@@ -50,6 +52,8 @@
     "develop": "gatsby develop",
     "format": "prettier-eslint --eslint-config-path ./config/eslint.config.js --write '**/*.js'",
     "lint": "eslint -c ./config/eslint.config.js . --ext .js",
+    "predeploy": "gatsby build",
+    "deploy": "gh-pages -d yarn develop",
     "start": "yarn develop",
     "serve": "gatsby serve",
     "test": "jest --config ./config/jest.config.js"
